@@ -1,0 +1,45 @@
+.shirtcontain{
+    margin-top: 5%;
+    display: grid;
+    margin-left: 5%;
+    width: 90%;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(5, 1fr);
+        grid-gap: 25px;
+}
+.shirtimg{
+    width: 105%;
+    height: 80%;
+}
+.heading{
+    font-size: 45px;
+    font-weight: 350;
+    color: #000;
+    text-align: left;
+    margin-left: 5%;
+    /* margin-top: 5%; */
+}
+.subtitle{
+    font-size: 22px;
+    font-weight: 200;
+    color: rgb(117, 117, 117);
+    text-align: left;
+    margin-left: 5%;
+    /* margin-top: 5%; */
+}
+.shirtcontain>div>h3{
+    font-size: 15px;
+    font-weight:  100;
+    margin-top: 5%;
+    text-align: left;
+    margin-left: 5%;
+}
+.shirtcontain>div>p{
+    font-size: 18px;
+    font-weight:  330;
+    color: black;
+    margin-top: 5%;
+    margin-left: 5%;
+    text-align: left;
+}
+ 

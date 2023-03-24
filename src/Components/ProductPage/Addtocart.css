@@ -1,0 +1,46 @@
+.addtocart{
+    /* border: 1px solid black; */
+   
+    padding-left: 5%;
+    width:50%
+}
+.addtocart>p:nth-child(1){
+    text-align: left;
+}
+
+.image{
+    width:60%;
+    display: flex;
+    /* border: 1px solid black; */
+}
+.addname{
+    text-align: left;
+}
+.image>div>img{
+width: 60%;
+height: 90%;
+}
+.szview{
+    width: 60%;
+    margin-right: 40%;
+    height: 50px;
+    background-color: white;
+    cursor: pointer;
+}
+.szview:hover{
+    border:3px solid black;
+}
+.szcheck{
+    width: 60%;
+    margin-right: 40%;
+    height: 50px;
+    margin-top: 2%;
+    /* background-color: black; */
+    color: white;
+    cursor: pointer;
+}
+ .addcontinue{
+   margin-right: 40%;
+   text-decoration: underline;
+ }
+ 

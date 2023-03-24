@@ -1,0 +1,80 @@
+.fotter{
+    /* border : 1px solid #000; */
+    display: flex;
+    margin-top:2%;
+    justify-content: left;
+    text-align: left;
+    padding: 1%;
+    padding-left: 5%;
+    
+}
+.foottitle{
+    
+    margin-left: -60%;
+}
+.fotter>div>h1{
+    font-size: 20px;
+    font-weight: 340;
+  
+}
+.fotter>div>p{
+    color: rgb(146, 146, 146);
+    font-size: 18px;
+}
+ .info
+{
+    margin-left: 18%;
+}
+.infohead{
+    /* border : 1px solid #000; */
+    margin-left: -82%;
+     
+}
+.trade{
+    margin-left: 10%;
+}
+.tradehead{
+    /* border : 1px solid #000; */
+    margin-left: -72%;
+}
+.subscribe{
+    /* border : 1px solid #000; */
+    display: flex;
+    justify-content: space-around;
+}
+.subs{
+    margin-left: -13%;
+}
+.subs>h1{
+    font-size: 20px;
+    font-weight: 340;
+    margin-left: -19%;
+}
+.subs>input{
+    width: 150%;
+    height: 40px;
+    /* border: 1px solid #000; */
+    font-size: 20px;
+    padding-left: 10px;
+}
+ 
+.icon{
+    margin-top:20px;
+
+ 
+}
+.paymentcardsfotter>div{
+    /* border: 1px solid #000;  */
+    margin-left: 1%; 
+    height: 50px;
+   margin-top: 1%;
+}
+.paymencardsfotter>div>img{
+  margin-left: 20px;
+  /* border: 1px solid #000; */
+}
+.paymentcardsfotter>div>p{
+    color: rgb(158, 155, 155);
+    font-size: 12px;
+    font-weight: 400;
+}

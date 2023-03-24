@@ -1,0 +1,123 @@
+.paymentcheck{
+    display: flex;
+    margin-top: 15%;
+     border:1px solid red;
+     width: 100%;
+    height: 900px;
+    background-color: #fff;
+    padding: 20px;
+}
+.paymentinfo{
+    border-right:1px solid rgb(169, 169, 169); 
+   width: 70%;
+}
+.contactinfor>div{
+    display:flex;
+    /* border:1px solid black; */
+     
+    }
+    .contactinfor>div>h1{
+        padding-left:10%;
+     
+    }
+    .contactinfor>div>p:nth-child(2){
+        padding-left:20%;
+    }
+    .contactinfor>div>p:nth-child(3){
+        padding-left:30%;
+        font-size:13px;
+        color: rgb(20, 139, 236);
+    }
+    .szcontainers{
+        border:1px solid rgb(169, 169, 169);
+        width: 90%;
+        height:200px;
+         border-radius:10px;
+        margin-left:10px;
+        margin-top:10%;
+    }
+    .paymentmethod>div{
+      display: flex;
+    }
+    .paymentmethod>div>h1{
+        padding-left:10%;
+     
+    }
+    .paymentmethod>div>p:nth-child(2){
+        padding-left:20%;
+    }
+    .paymentdiv{
+        border:1px solid rgb(169, 169, 169);
+        width: 90%;
+        height:200px;
+         border-radius:10px;
+        margin-left:10px;
+        margin-top:10%;
+    }
+    .paymentcard{
+        display: flex;
+    }
+
+    .same{
+      
+        border:1px solid rgb(169, 169, 169);
+        width: 80%;
+        height:130px;
+         border-radius:10px;
+        margin-left:10px;
+        margin-top:1%;
+    
+    }
+    .same>div{
+        display:flex;
+    }
+    .same>div>p{
+        padding-left:3%;
+    }
+    .blue{
+         
+        width: 20px;
+        margin-left:10px;
+        margin-top:5%;
+        height:19px;
+        
+        background-color:rgb(24,120,185);
+        border-radius: 90pc;
+        /* border:1px solid rgb(169, 169, 169); */
+    }
+    .circles{
+        width: 7px;
+        margin-left:6px;
+        margin-top:29%;
+        height:7px;
+        background-color:rgb(255, 255, 255);
+        border-radius: 90pc;
+    }
+    .empty{
+        display: flex;
+        display: inline;
+       
+    }
+    .emptycircle{
+        border:1px solid rgb(169, 169, 169);
+        width: 20px;
+        margin-left:10px;
+        height: 20px;
+        margin-top:4% ;
+        border-radius: 45%;
+    }
+    .butt{
+        background-color:  rgb(36, 141, 211);
+        margin-left: 50%;
+        color:white;
+        margin-top:2%;
+        width: 20%;
+        height: 40px;
+        border: none;
+        border-radius: 5px;
+    }
+    .leftcodes{
+        margin-left: 3%;
+     /* //   border:1px solid rgb(169, 169, 169); */
+    /* border-left:1px solid rgb(169, 169, 169);  */
+    }

@@ -1,0 +1,117 @@
+.prodcontainer{
+    /* display: flex; */
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    
+    /* border: 1px solid red; */
+    margin-top: 15%;
+}
+/* .prodcontainer>div{
+    display:flex
+} */
+.prodimg>img{
+    width: 150%;
+    height: 590px;
+    /* border: 1px solid red; */
+    margin-left: 20%;
+}
+.procontent{
+    display: flex;
+}
+.protext{
+    margin-left:30%;
+    text-align: left;
+}
+.protext>p:nth-child(1){
+    font-size: 13px;
+    font-weight: 100;
+    color: rgb(0, 0, 5);
+}
+.protext>p:nth-child(2){
+    font-size: 40px;
+    font-weight: 350;
+    color: rgb(0, 0, 5);
+    margin-top: -2%;
+    
+}
+.protext>p:nth-child(3){
+    font-size: 19px;
+    font-weight: 100;
+    color: rgb(0, 0, 5);
+    margin-top: -2%;
+}
+.protext>p:nth-child(4){
+    font-size: 15px;
+    font-weight: 70;
+    color: rgb(137, 137, 143);
+    margin-top: -2%;
+}
+.protext>p:nth-child(5){
+    margin-top: 2%;
+    font-size: 17px;
+    font-weight: 70;
+    color: rgb(137, 137, 143);
+    margin-top: -2%;
+}
+
+.allbuttons>button{
+    width:17%;
+    height: 35px;
+    border: 1px solid rgb(183, 183, 196);
+    border-radius: 25px;
+    margin-left: 10px;
+    background-color:   white;
+    color:  rgb(125, 116, 116)
+ 
+}
+ 
+.allbuttons>button:hover{
+    background-color: rgb(13, 13, 15);
+    color: white;
+}
+.protext>p:nth-child(7){
+    font-size: 15px;
+    font-weight: 90;
+    color: rgb(137, 137, 143);
+    margin-top: 2%;
+}
+.quantitybox{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 40%;
+    height: 40px;
+    border: 1px solid rgb(164, 164, 170);
+    
+    margin-top: 2%;
+}
+.quantitybox>button{
+    background-color: white;
+    border: none;
+     
+}
+.addproduct{
+    margin-top: 10px;
+    width: 80%;
+    margin-right: 40%;
+    height: 50px;
+    background-color: white;
+    cursor: pointer;
+}
+.addproduct:hover{
+    border:3px solid black;
+}
+
+.buyproduct{
+    width: 80%;
+    margin-right: 40%;
+    height: 50px;
+    margin-top: 2%;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+
+}

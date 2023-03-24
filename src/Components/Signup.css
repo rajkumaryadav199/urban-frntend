@@ -1,0 +1,43 @@
+.signupcontainer {
+    width:80%;
+    height: 400px;
+    /* border: 1px solid black; */
+    justify-content: center;
+    align-items: center;
+    margin-top: 13%;
+
+}
+.heading1{
+    font-size: 45px;
+    font-weight: 350;
+    color: #000;
+    text-align: left;
+    margin-left: 50%;
+    /* margin-top: 5%; */
+}
+.signupinput{
+    width: 50%;
+    height: 230px;
+    /* border: 1px solid rgb(74, 11, 184); */
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 40%;
+}
+input{
+    width: 80%;
+    height: 50px;
+    margin-top: 2%;
+    border: 1px solid black;
+    padding-left: 5%;
+     
+}
+input:hover {
+    border: 2px solid rgb(3, 0, 6);
+}
+.signupbutton{
+    background-color: black;
+    color: white;
+    width: 30%;
+    padding-right: 5%;
+    cursor: pointer;
+}

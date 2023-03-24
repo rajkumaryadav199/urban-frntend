@@ -1,0 +1,118 @@
+.ship{
+    border:1px solid red;
+    width: 100%;
+    height: 800px;
+    display:flex;
+    margin-top: 22%;
+}
+.contactship{
+    border-right:1px solid rgb(169, 169, 169);;
+    width: 60%;
+    height:400px;
+    display: inline;
+    padding-left: 3%;
+}
+ 
+.contactinfo>div{
+display:flex;
+/* border:1px solid black; */
+ 
+}
+.contactinfo>div>h1{
+    padding-left:10%;
+ 
+}
+.contactinfo>div>p:nth-child(2){
+    padding-left:20%;
+}
+.contactinfo>div>p:nth-child(3){
+    padding-left:30%;
+    font-size:13px;
+    color: rgb(20, 139, 236);
+}
+.szcontainer{
+    border:1px solid rgb(169, 169, 169);
+    width: 80%;
+    height:150px;
+     border-radius:10px;
+    margin-left:10px;
+    margin-top:10%;
+}
+.shipto>div{
+    display:flex;
+}
+ .shipto>div>h1{
+    padding-left:10%;
+ }
+    .shipto>div>p:nth-child(2){
+        padding-left:16%;
+    }
+    .shipto>div>p:nth-child(3){
+        padding-left:20%;
+        font-size:13px;
+        color: rgb(20, 139, 236);
+    }
+    .method{
+        display: flex;
+        border:1px solid rgb(169, 169, 169);
+        width: 80%;
+        height:50px;
+         border-radius:10px;
+        margin-left:10px;
+        margin-top:1%;
+        display: flex;
+    }
+    .method>div{
+        display:flex;
+    }
+    .method>p:nth-child(3){
+        padding-left:55%;
+    }
+    .method>p:nth-child(2){
+        padding-left:3%;
+    }
+    .method>div{
+         
+        width: 20px;
+        margin-left:10px;
+        margin-top:3%;
+        height:19px;
+        
+        background-color:rgb(24,120,185);
+        border-radius: 90pc;
+        /* border:1px solid rgb(169, 169, 169); */
+    }
+    .circle{
+        width: 7px;
+        margin-left:7px;
+        margin-top:26%;
+        height:7px;
+        background-color:rgb(255, 255, 255);
+        border-radius: 90pc;
+    }
+    .standard{
+        margin-left:-80%;
+        font-size: 20px;
+    }
+      .but{
+        background-color:  rgb(36, 141, 211);
+    margin-left: 250%;
+    color:white;
+    margin-top:10%;
+    width: 100%;
+    height: 40px;
+    border: none;
+    border-radius: 5px;
+        
+    }
+    .leftcode{
+        margin-top: 1%;
+        width: 40%;
+        height: 400px;
+        margin-left: 1%;
+        /* border:1px solid green; */
+    }
+/* .left{
+    border:1px solid  blue;
+    margin-left: 10 px;
+} */

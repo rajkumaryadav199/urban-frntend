@@ -1,0 +1,70 @@
+.navcontainer{
+    width:100%;
+    height: 160px;
+    /* border:1px solid blue; */
+    /* justify-content: center;
+    align-items: center; */
+    background-color: white;
+    position: fixed;
+    /* position: sticky; */
+ 
+    top: 0;
+     
+    z-index: 1;
+    
+}
+.touch{
+    margin-left: 27%
+}
+h1{
+    text-align: center;
+    font-size: 15px;
+    font-weight: 400;
+    color: rgb(0, 0, 5);
+}
+.topnav{
+    border:1px solid red;
+    width: 100%;
+    height:40px;
+    padding-top: 10px;
+    background-color: white;
+}
+/* .secondnav{
+    display: flex;
+} */
+.urbannav{
+    /* border:1px solid green; */
+    width: 100%;
+    height:37px;
+    padding-top: 30px;
+    /* margin-top: -8px; */
+    background-color: white;
+}
+.urbannav>img{
+    /* margin-top: -65px; */
+    margin-left: 0%;
+}
+.links{
+    /* border:1px solid green; */
+    color: black;
+    width: 70%;
+    margin: auto;
+    display: flex;
+    padding-top: 12px;
+    height:40px;
+    justify-content: space-around;
+    align-items: center;
+}
+ 
+.links > p:hover{
+    cursor: pointer;
+    text-decoration: underline;
+}
+.secondnav{
+        border-bottom:1px solid rgb(216, 216, 216);
+}
+.toLinknav{
+    border-bottom:1px solid rgb(216, 216, 216);
+}
+
+ 

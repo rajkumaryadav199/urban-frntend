@@ -1,0 +1,43 @@
+.Input{
+    padding: 5px;
+    border: 1px solid black;
+    height: 40px;
+    width: 35%;
+     /* margin-top: 35%; */
+     font-size: 18px;
+     font-weight:  lighter;
+     padding-left: 10px;
+}
+.Input2{
+    padding: 5px;
+    border: 1px solid black;
+    height: 40px;
+    width: 35%;
+     margin-top: 2%;
+     font-size: 18px;
+     font-weight:  lighter;
+     padding-left: 10px;
+}
+.login > p {
+    margin-top: 10px;
+    font-size: 17px;
+    font-weight:  lighter;
+    margin-left: 10px;
+    text-decoration: underline;
+}
+.login > p:nth-child(2) {
+    margin-top: 10px;
+    font-size: 18px;
+    font-weight:  lighter;
+   
+}
+.log{
+    color:black;
+    margin-top: 15%;
+    font-size: 40px;
+    /* border:1px solid green; */
+}
+.acount{
+    color:black;
+     text-decoration: underline;
+}

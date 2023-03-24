@@ -1,0 +1,208 @@
+.imgtext{
+    position: relative;
+    color: white;
+    margin-top: -40;
+    text-align: center;
+    justify-content: center;
+    
+  
+}
+ 
+.imgtext> p{
+    text-align: center;
+    color:white;
+    font-size: 45px;
+    position: relative;
+   font-family:  Geneva,   sans-serif;
+   
+        top: -270px;
+        /* background-color: rgba(0,0,0,0.5); */
+}
+.imgtext> button{
+    text-align: center;
+    color:white;
+    width: 12%;
+    height: 50px;
+    font-size: 40px;
+    position: relative;
+    font-size: 18px;
+        top: -270px;
+        border-color: white;
+        background-color:transparent;
+}
+.moreh{
+    margin-top: -120%;
+    font-size: 20px;
+    /* border: 1px solid red; */
+    text-align: left;
+    padding-left: 6%;
+   
+}
+.moreh>p{
+    font-size: 27px;
+    font-weight: 320;
+}
+.more{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    /* margin-top: -120%; */
+    
+}
+.moreleft{
+    margin-left: 6%;
+    transition: transform .2s; /* Animation */
+    
+   
+    
+}
+.tshirtname{
+    font-size: 24px;
+    font-weight: 320;
+    text-align: left;
+}
+.denimsname{
+    font-size: 24px;
+    font-weight: 320;
+    text-align: left;
+    padding-left: 26%;
+}
+.moreleft:hover{
+   
+    transform: scale(1.1);
+}  
+.moreright>p{
+    padding-right: 7%;
+}
+.moreright>p:nth-child(3){
+    padding-right: 37%;
+}
+.moreright >img {
+    margin-left:10%;
+    
+    /* margin-top: 10%; */
+   
+}
+.feature{
+    margin-top: 2%;
+    display: grid;
+    margin-left: 5%;
+    width: 90%;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(5, 1fr);
+        grid-gap: 25px;
+        cursor: pointer;
+}
+/* .feature>div>img{
+    width: 120%;
+    height: 400px;
+} */
+.prodimgs{
+    position: relative;
+    display: inline-block;
+    /* border: 1px solid #000; */
+    margin-left: 10%;
+    width: 90%;
+}
+.fecimg{
+    width: 110%;
+    height: 400px;
+    /* border: 1px solid rgb(209, 56, 56); */
+}
+.prodimgs> .flip{
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.prodimgs:hover .flip{
+    display: inline;
+    width: 120%;
+    height: 400px;
+}
+.prodimgs>p{
+    text-align: left;
+    color: rgb(104, 101, 101);
+}
+/* .featuretitle{
+    color: rgb(171, 159, 159);
+} */
+.featuretitle{
+    font-size: 35px;
+    font-weight: 200;
+    padding-right: 65%;
+    margin-top: -10%;
+}
+.card {
+    /* width: 80%;
+    height: 180px; */
+    position: relative;
+    display: inline-block;
+    /* border: 1px solid #000; */
+    margin-left: 20%;
+ 
+ 
+    /* margin: 50px; */
+}
+ 
+.card .img-top {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    
+    /* z-index: 99; */
+}
+.card:hover .img-top {
+    display: inline;
+    width: 100%;
+    height: 480px;
+    
+}
+.video{
+    margin-top:5% ;
+    /* border: 1px solid black; */
+    width :100%;
+    height: 600px;
+}
+.video>img{
+    width :100%;
+    height: 550px;
+}
+.iconplay{
+    position: relative;
+    /* color: white; */
+    margin-top: -24%;
+    text-align: center;
+    margin-left: 47%;
+    justify-content: center;
+    background-color: rgb(255, 248, 248);
+    border-radius: 60%;
+    width: 5%;
+    height: 45px;
+    padding-top: 2%;
+    /* display: block; */
+   
+
+}
+.iconplay::before{
+     
+    /* background-color: transparent; */
+    display: none;
+
+    /* position: relative;
+    color: white;
+    margin-top: -0;
+    text-align: center;
+    justify-content: center; */
+}
+.iconplay>img{
+    background-color: transparent;
+}
+.video>iconplay{
+    display: none;
+}
+.urbanpic{
+    margin-top:13%
+}
