@@ -114,7 +114,7 @@ export default function Information() {
     </div>
     </div>
 
-    ///coupon code
+    
     <div className='left'>
      
     <div className='couponbox'> 

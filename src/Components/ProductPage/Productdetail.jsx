@@ -15,14 +15,18 @@ export default function Productdetail({product}) {
   const [count,setcount] = useState(0)
   // const [data, setData]= useState([]); 
 //  const cart=useSelector((store)=>store.cartreducer.cart)
- 
-  
-  //console.log("prod",cart)
+ //console.log("prod",cart)
   const dispatch = useDispatch();
 const handleadd= ()=>{
  
-  setcount(count+1)
-
+  if(count<3)
+  {
+    setcount(count+1)
+    
+  }
+else{
+  alert("Item Out of stock")
+}
   }
 const handlesub= ()=>{
 if(count <= 0){
@@ -31,14 +35,14 @@ if(count <= 0){
 setcount(count-1)
 }
 
-  const {id,end}=useParams();
-  // console.log("id",id)
+  const {_id,end}=useParams();
+   console.log("id",_id,end)
        
         const [current, setCurrent]=useState({});
         //console.log("curr",cart)
     
         useEffect(()=>{
-    axios.get(`http://localhost:8080/${end}/${id}`).then(res=>{
+    axios.get(`http://localhost:8080/api/${end}/${_id}`).then(res=>{
       setCurrent(res.data)
       // console.log("data",res.data)
     }
@@ -57,11 +61,14 @@ setcount(count-1)
       
           // .then(()=>dispatch(getProduct()))
           // .then(()=>{
-          //   navigate("/yourcart")
+           navigate("/yourcart")
           // })
         
         }
 
+        const checkout=()=>{
+          navigate("/information")
+        }
   //         useEffect(()=>{
   //   if(id) {
   //     dispatch(getProduct)
@@ -105,7 +112,7 @@ setcount(count-1)
 
       <button className='addproduct' onClick={addToCartHandeler} >Add to cart</button>
       <br/>
-      <button className='buyproduct'> Buy it now</button>
+      <button className='buyproduct' onClick={checkout}> Buy it now</button>
     </div>
 
     </div>

@@ -41,9 +41,9 @@ export default function AllRoutes() {
         <Route path="/information/shipping" element={<Shipping/>} />
         <Route path="/information/shipping/payment" element={<PaymentPage/>} />
 
-        <Route path="/:end/:id" element={<Productdetail/>} />
+        <Route path="/:end/:_id" element={<Productdetail/>} />
         {/* <Route path="/addtocartpopup" element={<Addcartpopup/>} /> */}
-        <Route path="/shirt/:id" element={<Productdetail/>} />
+        <Route path="/shirt/:_id" element={<Productdetail/>} />
         <Route path="/yourcart" element={<Yourcart/>} />
         
        

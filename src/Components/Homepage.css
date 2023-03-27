@@ -5,7 +5,7 @@
     text-align: center;
     justify-content: center;
     
-  
+    
 }
  
 .imgtext> p{
@@ -104,6 +104,7 @@
     /* border: 1px solid #000; */
     margin-left: 10%;
     width: 90%;
+    height: auto;
 }
 .fecimg{
     width: 110%;

@@ -24,7 +24,7 @@ export const getNewArrivalFailure = (payload)=> ({
 export const getMensData =(payload)=>{
     return (dispatch) => {
         dispatch(getNewArrival());
-        axios.get(`http://localhost:8080/api/products`,{
+        axios.get(`http://localhost:8080/api/newarrival`,{
             params:{
                 ...payload,
             }
