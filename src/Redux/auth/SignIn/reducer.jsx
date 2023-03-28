@@ -4,20 +4,21 @@ import { SIGNIN_FAILURE, SIGNIN_REQUEST, SIGNIN_SUCCESS } from "./actionTypes";
 
 
 const initialState = {
-    auth : false ,
-    token:'',
+    isAuth :false ,
+    token: '',
     isError:false,
-    isLoading:true
+    isLoading:false
 }
 
 const signInReducer = (state = initialState, action) => {  
 
-const {type, payload} = action;
+const {type, token} = action;
+console.log("11111",action)
  switch(type) {
     case SIGNIN_REQUEST:
         return {
             ...state,
-            auth : false,
+            isAuth : false,
             isLoading:true,
             isError:false
 
@@ -25,14 +26,15 @@ const {type, payload} = action;
     case SIGNIN_SUCCESS:
     
         return {
-            ...state,
-            auth : true,
-            token: payload.token,  
+            ...state ,
+            token :token,
+            isAuth:true,
+
         }
     case SIGNIN_FAILURE:
         return {
             ...state,
-            auth : false,
+            isAuth : false,
             isError:true,
             isLoading:false,
             token:'',

@@ -1,59 +1,49 @@
-import React, { useState } from 'react'
-import Button from '@mui/material/Button';
+import React, { useEffect, useState } from 'react'
 import "./Login.css"
-import { Link, useLocation } from 'react-router-dom';
-import Navbar from './Navbar';
-import {useDispatch, useSelector} from 'react-redux';
-import { signIn } from '../Redux/auth/action';
-import {useNavigate} from "react-router-dom"
-import { useEffect } from 'react';
+import { Link, useLocation,useNavigate } from 'react-router-dom';
+import {shallowEqual,useDispatch, useSelector} from 'react-redux';
+import { signIn } from '../../Redux/auth/SignIn/action';
 
-export default function Login({}) {
+
+
+export default function Login() {
  
  const [email,setEmail] = useState("");
  const [password,setPassword]= useState("")
 
  const navigate = useNavigate();
- const dispatch = useDispatch()
-const location = useLocation()
+ const dispatch = useDispatch();
 
-const all = useSelector((state)=>state.signIn)
- 
-//  useEffect(()=>{
-//        dispatch(signIn)
-//  },[])
-  
- 
- const handleSubmit  =(e) => {
-      if (email.email === "" || password.password === "") {
-    return;
-  }
-    e.preventDefault();
-    const userDetails = {
-      email,
-      password,
-    };
-    console.log(userDetails,"userlog")
-      dispatch(signIn(userDetails))
-      
-    if(userDetails.email != "" && userDetails.password !=""){
-      alert("success")
-        return navigate("/")
-    }
-    
-     
+//const location =  useLocation()
+const {isAuth, token,} = useSelector((state)=>state.signInReducer, shallowEqual)
+
+if(isAuth && token)
+{
+alert("Login Success")
+navigate("/")
+}
+const handleSubmit  =(e) => {
+e.preventDefault();
+ dispatch(signIn( email,
+        password))
        
-   
- }
-   
-  
 
-  
+}
+
+// useEffect(()=>{
+//    if(isAuth)
+//         {
+//         alert("Login Success")
+//        navigate("/")
+//        }
+//     },[isAuth]
+//     )
+
   return (
     <div  >
         {/* <Link to="/"> <Navbar/> </Link> */}
         <h1 className='log'>Login</h1>
-        <form > 
+        <form  onSubmit={handleSubmit}> 
         <input
       
           className="Input"
@@ -81,12 +71,13 @@ const all = useSelector((state)=>state.signIn)
         <div className='login'> 
         <p>Forgot your password</p>
         <br />
-        <button style={{backgroundColor:"#0b0b0b",color:"white", width:"14%" ,height:"40px",borderRadius:"none" ,fontSize:"15px"}} 
-        onClick={handleSubmit}
+        <input style={{backgroundColor:"#0b0b0b",color:"white", width:"14%" ,height:"40px",borderRadius:"none" ,fontSize:"15px"}} 
+        // onClick={handleSubmit}
         type="submit"
-        >
-            Sign in
-        </button>
+        value="Sign in"
+        />
+            {/* Sign in
+        </button> */}
         
         
        <Link to="/signup" ><p  className="acount"  >

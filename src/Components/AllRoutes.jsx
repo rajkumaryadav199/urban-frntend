@@ -7,7 +7,7 @@ import Shipping from './Checkout/Shipping'
 import Fotter from './Fotter'
 import Homepage from './Homepage'
  
-import Login from './Login'
+import Login from './Auth/Login'
 import Navbar from './Navbar'
 import Addcartpopup from './ProductPage/Addcartpopup'
 import Denims from './ProductPage/Denims'
@@ -19,7 +19,7 @@ import Sweater from './ProductPage/Sweater'
 import Trouser from './ProductPage/Trouser'
 import Tshirt from './ProductPage/Tshirt'
 import Yourcart from './ProductPage/Yourcart'
-import Signup from './Signup'
+import Signup from './Auth/Signup'
 
 export default function AllRoutes() {
   return (

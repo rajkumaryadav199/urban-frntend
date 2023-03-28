@@ -31,9 +31,8 @@
         background-color:transparent;
 }
 .moreh{
-    margin-top: -120%;
+    /* margin-top: -120%; */
     font-size: 20px;
-    /* border: 1px solid red; */
     text-align: left;
     padding-left: 6%;
    
@@ -52,10 +51,7 @@
 }
 .moreleft{
     margin-left: 6%;
-    transition: transform .2s; /* Animation */
-    
-   
-    
+    transition: transform .2s; /* Animation */   
 }
 .tshirtname{
     font-size: 24px;
@@ -80,9 +76,7 @@
 }
 .moreright >img {
     margin-left:10%;
-    
-    /* margin-top: 10%; */
-   
+
 }
 .feature{
     margin-top: 2%;
@@ -90,7 +84,7 @@
     margin-left: 5%;
     width: 90%;
         grid-template-columns: repeat(4, 1fr);
-        grid-template-rows: repeat(5, 1fr);
+        /* grid-template-rows: repeat(5, 1fr); */
         grid-gap: 25px;
         cursor: pointer;
 }
@@ -108,7 +102,7 @@
 }
 .fecimg{
     width: 110%;
-    height: 400px;
+    height: auto;
     /* border: 1px solid rgb(209, 56, 56); */
 }
 .prodimgs> .flip{

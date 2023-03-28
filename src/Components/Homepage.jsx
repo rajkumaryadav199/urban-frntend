@@ -17,7 +17,6 @@ export default function Homepage() {
  try {
   const responce= await fetch("http://localhost:8080/api/home")
   const data= await responce.json()
-  console.log("data", responce, data)
   sethome(data)
  } catch (error) {
    console.log(error)
@@ -25,13 +24,6 @@ export default function Homepage() {
  }
 console.log( "home",home)
  useEffect(()=>{
-  // axios.get("http://localhost:8080/api/products").then(res=>{
-  //   sethome(res.data)
-  // }
-  // ).catch(err=>{
-  //   console.log(err)
-  // })
-
   getData()
   },[])
   const handleplay=()=>{
@@ -63,10 +55,12 @@ console.log( "home",home)
           return(
             
               <div className="prodimgs">
-                  <Link to= "/newarrival">  <img  src={item.image} alt="img"  className="fecimg" /> </Link>  
+                <Link to= "/newarrival"> 
+                 <img  src={item.image} alt="img"  className="fecimg" /> 
+                 </Link>  
                 <img src={item.image2} alt="img" className='flip'/>  
                 <p>{item.title}</p>
-                <p>{item.price}</p>
+                <p>Rs {item.price}</p>
               </div>
            
           )

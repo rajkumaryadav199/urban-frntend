@@ -5,12 +5,10 @@ import { shirtreducer } from "./Shirt/reducer";
 import { tshirtreducer } from "./T-shirt/reducer";
 import { trouserreducer } from "./Trouser/reducer";
 import { denimsreducer } from "./Denims/reducer";
- 
-import {shortreducer } from "./Shorts/reducer";
+ import {shortreducer } from "./Shorts/reducer";
 import {sweaterSreducer} from "./Sweaters/reducer";
-//import reducer from "./auth/reducer";
-// import { signupreducer } from "./Siginup/reducer";
-import  signInReducer  from "./auth/reducer"
+import  signInReducer  from "./auth/SignIn/reducer"
+import { signUpReducer } from "./auth/SignUp/reducer";
 import cartreducer from "./Cart/reducer";
 
 const composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;
@@ -32,6 +30,7 @@ const rootReducer = combineReducers({
     sweaterSreducer,
     shortreducer ,
     signInReducer,
-   cartreducer
+   cartreducer,
+   signUpReducer
 });
 export const store =  legacy_createStore(rootReducer, enhancer);

@@ -153,7 +153,7 @@ const filteredItems = records.filter(item => {
  <Accordion defaultIndex={[0]} allowMultiple>
 <AccordionItem>
   <h2>
-    <AccordionButton className='accbtn'>
+    <AccordionButton className='accbtn' style={{border:"none" , fontSize:"20px"}}>
       <Box as="span" flex='1' textAlign='left'>
         Color
       </Box>
@@ -198,7 +198,7 @@ const filteredItems = records.filter(item => {
 <Accordion defaultIndex={[0]} allowMultiple>
 <AccordionItem>
   <h2>
-    <AccordionButton className='accbtn'>
+    <AccordionButton className='accbtn' style={{border:"none" , fontSize:"20px"}}>
       <Box as="span" flex='1' textAlign='left'>
         Title
       </Box>
@@ -258,7 +258,7 @@ onChange={handleTitleChange} />
                                 </NavLink>
                         
                                 <h3>{product.title}</h3>
-                                <p>{product.price}</p>
+                                <p>Rs. {product.price}</p>
                         
                         
                         </div>

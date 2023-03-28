@@ -84,7 +84,7 @@ setcount(count-1)
       <div className='protext'>
         <p>URBANTOUCH</p>
         <p>{current.title}</p>
-        <p>{current.price}</p>
+        <p>₹ {current.price}</p>
         <p>Tax included.</p>
         <p>Size</p>
         <div className='allbuttons'>

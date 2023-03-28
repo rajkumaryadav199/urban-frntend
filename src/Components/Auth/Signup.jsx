@@ -1,16 +1,16 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import "./Signup.css"
 import { useNavigate } from "react-router-dom";
-import axios from "axios";
+//import axios from "axios";
 import { useDispatch, useSelector } from 'react-redux';
-import { signUp } from '../Redux/Siginup/action';
+import { signUp } from '../../Redux/auth/SignUp/action';
 
 export default function Signup() {
-
-  const navigate = useNavigate();
+const navigate = useNavigate();
   const dispatch = useDispatch();
-
+  const {isLoading}=useSelector((state)=>state.signUpReducer)
   //States
+  console.log("message", isLoading)
   const [formData,setForm] = useState({
     firstName: '',
     lastName: '',
@@ -20,48 +20,57 @@ export default function Signup() {
 
   const handleInput  = (e) => {
     const {name, value } = e.target;
-
+  console.log(name, value , e.target)
     setForm({
       ...formData,
       [name]: value,
     });
   };
 
-  //const isauthenticated = useSelector(state=>state.signUp.isauthenticated);
-
   const handleSubmit =  (e) => {
-    console.log(formData,"check")
     e.preventDefault();
-    if (formData.firstName === "" || formData.email === "" || formData.password === "") {
-      return
-    }
-    dispatch(signUp(formData)); 
-    
-      alert("Register Successfully")
-    
-    
-    navigate("/login");
+   dispatch(signUp(formData)); 
+  
   }
- 
- 
+
+  useEffect(()=>{
+   if(!isLoading){
+    navigate("/login")
+   }
+  },[isLoading])
 
   return (
     <div className='signupcontainer'>
       <h1 className='heading1'>Create account</h1>
-      <form className='signupinput '>
-        <input  name="firstName"  type="text" placeholder="name" onChange={(e)=>{handleInput(e)}} className='detail' required />
+      <form className='signupinput ' onSubmit={(e)=>handleSubmit(e)}>
+        <input  name="firstName" 
+         type="text" placeholder="First Name" 
+         onChange={(e)=>{handleInput(e)}} 
+         className='detail' required />
         
         <br />
-        <input  name="lastName" type="text"  placeholder="name"  onChange={(e)=>{handleInput(e)}}className='detail' required />
+        <input  name="lastName" 
+        type="text"  
+        placeholder="Last Name"  
+        onChange={(e)=>{handleInput(e)}}className='detail' required />
         
         <br />
-        <input  name="email" type="email"   placeholder="Email" onChange={(e)=>{handleInput(e)}} required/>
+        <input  name="email" 
+        type="email"   
+        placeholder="Email" 
+        onChange={(e)=>{handleInput(e)}} required/>
         <br />
-        <input name="password" type="password"   placeholder="Password"  onChange={(e)=>{handleInput(e)}} required/>
+        <input name="password" 
+        type="password"   
+        placeholder="Password"  
+        onChange={(e)=>{handleInput(e)}} required/>
         
         <br />
 
-        <input  type="button" value="create" className='signupbutton' onClick={handleSubmit} />
+        <input  type="Submit" 
+        value="create" 
+        className='signupbutton' 
+       />
         
       </form>
 
